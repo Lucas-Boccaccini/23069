@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1;
+}
+.menu-container{
+    /* display: flex; 
+    justify-content: space-between; */
+    background-color: #495057;
+}
+.nav-links li{
+    margin: 5px;
+}
+.menu-container img{
+    width: 100px;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    background-image: url(img/ba1.jpg);
+    background-repeat: no-repeat ;
+    background-size: 100vw 90vh;
+    color: white;
+    height: 90vh;
+    padding-right: 5vw;
+    /* width: 100%; */
+}
+.main-text{
+    width: 500px; 
+}
+.main-buttons{
+    margin-top: 2vh;
+}
+.oradores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.cards{
+    height: 80vh;
+}
+
+.JS{
+    background-color: rgb(254, 193, 7);
+    border-radius: 5px;
+    padding: 0 5px;
+    font-weight: bold;
+}
+.react{
+    background-color: rgb(22, 161, 184);
+    border-radius: 5px;
+    padding: 0 5px;
+    font-weight: bold;
+    color: white;
+}
+.Negocios{
+    /* background-color: rgb(22, 161, 184); */
+    background-color: gray;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-weight: bold;
+    color: white;
+}
+.Startups{
+    /* background-color: rgb(22, 161, 184); */
+    background-color: red;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-weight: bold;
+    color: white;   
+}
+
+.honolulu-text{
+    background-color: #495057;
+    color: white;
+    height: 60vh;
+    
+}
+.honolulu-img img{
+    width: 50vw;
+    height: 60vh;
+}
+u{
+    text-decoration-style: dotted;
+}
+.boton{
+    background-color: rgb(150, 201, 62) !important;
+    border-color: rgb(150, 201, 62) !important;
+}
+a:hover{
+    color: #0cc449 !important;
+}
+.navbar{
+    --bs-navbar-padding-y: 0 !important;
+}
+.footer-content{
+    background-color: rgb(29, 58, 74);
+    color: white;
+}
+.btn-success {
+    --bs-btn-bg: #0cc449 !important;
+    --bs-btn-border-color: #0cc449 !important;
+    --bs-btn-hover-bg: #0cc449 !important;
+    --bs-btn-hover-border-color: #0cc449 !important;
+}
+
