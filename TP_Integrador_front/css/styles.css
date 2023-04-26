@@ -21,7 +21,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    background-image: url(img/ba1.jpg);
+    background-image: url(../img/ba1.jpg);
     background-repeat: no-repeat ;
     background-size: 100vw 90vh;
     color: white;

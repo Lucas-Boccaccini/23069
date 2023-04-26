@@ -4,10 +4,16 @@
 }
 .menu-principal{
     display: flex;
-    justify-content: space-between !important;
+    justify-content: space-between;
 }
 .java{
     font-size: 30px;
     color:black;
     margin:0 15px 0 5px;
+}
+.cards{
+    /* margin-top: 10vh; */
+    margin-bottom: 2vh;
+
+
 }
