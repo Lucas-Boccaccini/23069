@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empres SRL - Sistem de Turnos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'roboto';
+        }
+        
+        .header-container {
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1vh 1vw; /*relativo al viewport*/
+            height: 10vh;
+            font-size: 2vh;
+        }
+        .main-content {
+            background-color: rgb(220, 226, 43);
+            height: 85vh;
+            display: flex;
+        }
+        .videos-container {
+            background-color: blue;
+            width: 70vw;
+        }
+        .turn-container {
+            background-color: bisque;
+            width: 30vw;
+        }
+        .turn {
+            background-color: rgb(255, 255, 255);
+            padding: 0.5vw;
+            border-radius: 5px;
+            height: 10vh;
+            margin: 1vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .miImg {
+            width: inherit !important;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-container">
+        <h1>Sistema de turnos</h1>
+        <span>18:12</span>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <div class="videos-container">
+                <!--
+                    <video controls loop autoplay>
+                        <source src="../video/turnero-bcra-jul191.mp4">
+                    </video>
+                -->
+                <img class="miImg" src="https://picsum.photos/id/237/500/700"/>
+            </div>
+            <div class="turn-container">
+                <div class="turn">
+                    <span>Box1</span>
+                    <span>PAMI</span>
+                </div>
+                <div  class="turn">
+                    <span>Box1</span>
+                    <span>PAMI</span>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <marquee behavior="" direction="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium cum odio temporibus ratione ipsa totam aut quas pariatur ipsum eligendi, saepe corrupti et sint cumque ea blanditiis adipisci asperiores!</marquee>
+    </footer>
+</body>
+</html>
