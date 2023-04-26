@@ -6,8 +6,6 @@ body{
     width: 1;
 }
 .menu-container{
-    /* display: flex; 
-    justify-content: space-between; */
     background-color: #495057;
 }
 .nav-links li{
@@ -21,16 +19,21 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    background-image: url(../img/ba1.jpg);
+    background-image: url(../img/ba1.jpg); 
+    filter: brightness(0.4);
+    /* backdrop-filter: brightness(0.9); */
     background-repeat: no-repeat ;
-    background-size: 100vw 90vh;
+    background-size: cover;
     color: white;
     height: 90vh;
     padding-right: 5vw;
+    /* z-index: 1; */
     /* width: 100%; */
 }
 .main-text{
     width: 500px; 
+    /* z-index: 1; */
+    
 }
 .main-buttons{
     margin-top: 2vh;
@@ -40,9 +43,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: start;
-}
-.cards{
-    height: 80vh;
 }
 
 .JS{
@@ -88,6 +88,7 @@ body{
 u{
     text-decoration-style: dotted;
 }
+
 .boton{
     background-color: rgb(150, 201, 62) !important;
     border-color: rgb(150, 201, 62) !important;
