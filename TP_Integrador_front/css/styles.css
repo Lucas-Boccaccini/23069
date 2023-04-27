@@ -31,7 +31,7 @@ body{
     padding-right: 5vw;
 }
 .main-text{
-    width: 500px; 
+    width: 500px;
 }
 
 .oradores{
@@ -74,16 +74,36 @@ body{
 .honolulu-text{
     background-color: #495057;
     color: white;
-    height: 60vh;
+    height: inherit;
     
 }
-.honolulu-img img{
-    width: 50vw;
-    height: 60vh;
-}
+
 u{
     text-decoration-style: dotted;
 }
+.footer-content{
+    background-color: rgb(29, 58, 74);
+    color: white;
+}
+
+
+@media (min-width: 576px) {
+    nav{
+        font-size: 3rem;
+    }
+    footer{
+        font-size: 3rem;
+    }
+   
+
+}
+
+
+
+
+
+
+
 .boton{
     background-color: rgb(150, 201, 62) !important;
     border-color: rgb(150, 201, 62) !important;
@@ -93,10 +113,6 @@ a:hover{
 }
 .navbar{
     --bs-navbar-padding-y: 0 !important;
-}
-.footer-content{
-    background-color: rgb(29, 58, 74);
-    color: white;
 }
 .btn-success {
     --bs-btn-bg: #0cc449 !important;
