@@ -22,16 +22,21 @@ body{
     justify-content: center;
     align-items: end;
     background-image: url(../img/ba1.jpg);
-    filter: brightness(0.4);
+    /* filter: brightness(0.4); */
     background-repeat: no-repeat ;
     background-position: center center;
     background-size: cover;
     color: white;
     height: 90vh;
-    padding-right: 5vw;
+    /* padding-right: 5vw; */
 }
 .main-text{
-    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 .oradores{
