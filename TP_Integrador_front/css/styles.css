@@ -86,8 +86,9 @@ u{
 .nav-item a:hover{
         filter: brightness(0.7);
 }
+
 /* responsive design mobil */
-@media (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 578px) and (max-width: 992px) {
     .cac{
         width: 200px !important;
     }
@@ -103,7 +104,7 @@ u{
         height: 5rem !important;
     }
     p{
-        font-size: 40px;
+        font-size: 30px;
     }
     .main-content{
         height: 100vh;
@@ -154,6 +155,7 @@ u{
                         justify-content: start;
                     }
 }
+
 /* Modificaciones a BS5 */
 .boton{
     background-color: rgb(150, 201, 62) !important;
