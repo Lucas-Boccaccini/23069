@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
 }
-body{
-    width: 1;
-}
 .menu-container{
     background-color: #495057;
 }
@@ -24,7 +21,7 @@ body{
     background-position: center center;
     background-size: cover;
     color: white;
-    height: 90vh;
+    height: 100vh;
 }
 .main-text{
     padding-left: 51vw;
@@ -32,7 +29,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: inherit;
     background-color: rgba(0, 0, 0, 0.5);
 
 }
@@ -86,7 +83,10 @@ u{
     display: flex;
     justify-content: center;
 }
-/* responsive */
+.nav-item a:hover{
+        filter: brightness(0.7);
+}
+/* responsive design mobil */
 @media (min-width: 576px) and (max-width: 992px) {
     .cac{
         width: 200px !important;
@@ -105,6 +105,9 @@ u{
     p{
         font-size: 40px;
     }
+    .main-content{
+        height: 100vh;
+    }
     .main-text{
         padding-left: 18vw;
         padding-right: 10vw;
@@ -112,6 +115,13 @@ u{
     .ConfBsAs{
         font-size: 4.5rem;
     }
+    .oradores span{
+        font-size: 2.5rem;
+    }
+    .card-body span{
+        font-size: 2rem;
+    }
+    /* Modificaciones a BS5 */
     .btn{
         font-size: 35px !important;
         padding: 1rem 0.5rem !important;
@@ -122,23 +132,29 @@ u{
     h5{
         font-size: 2.5rem !important;
     }
-    .oradores span{
-        font-size: 2.5rem;
-    }
-    .card-body span{
-        font-size: 2rem;
-    }
     .form-control{
         margin-top: 20px;
         font-size: 2.5rem !important;
     }
-    .footer-content ul li a:last-child{
-        justify-content: start !important;
-        align-content: start;
-        position: inherit;
-    }
 }
-/* Modificaciones a bs */
+/* responsive design mobil (landscape) */
+@media only screen and (min-device-width: 480px) 
+                   and (max-device-width: 640px) 
+                   and (orientation: landscape) {
+                    p{
+                        font-size: 30px;
+                    }
+                    .main-content{
+                        height: 120vh;
+                    }
+                    .main-text{
+                        padding-left: 18vw;
+                        padding-right: 10vw;
+                        display: flex;
+                        justify-content: start;
+                    }
+}
+/* Modificaciones a BS5 */
 .boton{
     background-color: rgb(150, 201, 62) !important;
     border-color: rgb(150, 201, 62) !important;
