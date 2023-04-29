@@ -104,7 +104,7 @@ u{
         height: 5rem !important;
     }
     p{
-        font-size: 30px;
+        font-size: 40px;
     }
     .main-content{
         height: 100vh;
@@ -139,8 +139,8 @@ u{
     }
 }
 /* responsive design mobil (landscape) */
-@media only screen and (min-device-width: 480px) 
-                   and (max-device-width: 640px) 
+@media only screen and (min-device-height: 320px) 
+                   and (max-device-height: 570px) 
                    and (orientation: landscape) {
                     p{
                         font-size: 30px;
