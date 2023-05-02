@@ -2,12 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body{
-    width: 1;
-}
 .menu-container{
-    /* display: flex; 
-    justify-content: space-between; */
     background-color: #495057;
 }
 .nav-links li{
@@ -22,25 +17,31 @@ body{
     justify-content: center;
     align-items: end;
     background-image: url(../img/ba1.jpg);
-    filter: brightness(0.4);
     background-repeat: no-repeat ;
     background-position: center center;
     background-size: cover;
     color: white;
-    height: 90vh;
-    padding-right: 5vw;
+    height: 100vh;
 }
 .main-text{
-    width: 500px;
-}
+    padding-left: 51vw;
+    padding-right: 9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
 
+}
+.NavLink li:last-child a{
+    color: #0cc449;
+}
 .oradores{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
 }
-
 .JS{
     background-color: rgb(254, 193, 7);
     border-radius: 5px;
@@ -55,7 +56,6 @@ body{
     color: white;
 }
 .Negocios{
-    /* background-color: rgb(22, 161, 184); */
     background-color: gray;
     border-radius: 5px;
     padding: 0 5px;
@@ -63,42 +63,102 @@ body{
     color: white;
 }
 .Startups{
-    /* background-color: rgb(22, 161, 184); */
     background-color: red;
     border-radius: 5px;
     padding: 0 5px;
     font-weight: bold;
     color: white;   
 }
-
 .honolulu-text{
     background-color: #495057;
     color: white;
     height: inherit;
-    
 }
-
 u{
     text-decoration-style: dotted;
 }
 .footer-content{
     background-color: rgb(29, 58, 74);
     color: white;
+    display: flex;
+    justify-content: center;
+}
+.nav-item a:hover{
+        filter: brightness(0.7);
 }
 
+/* responsive design mobil */
+@media (min-width: 578px) and (max-width: 992px) {
+    .cac{
+        width: 200px !important;
+    }
+    .nav-text{
+        font-size: 36.4px;
+    }
+    .nav-link{
+        font-size: 2.5rem !important;
+        margin: 1rem 0;
+    }
+    .navbar-toggler-icon{
+        width: 5rem !important;
+        height: 5rem !important;
+    }
+    p{
+        font-size: 40px;
+    }
+    .main-content{
+        height: 100vh;
+    }
+    .main-text{
+        padding-left: 18vw;
+        padding-right: 10vw;
+    }
+    .ConfBsAs{
+        font-size: 4.5rem;
+    }
+    .oradores span{
+        font-size: 2.5rem;
+    }
+    .card-body span{
+        font-size: 2rem;
+    }
+    /* Modificaciones a BS5 */
+    .btn{
+        font-size: 35px !important;
+        padding: 1rem 0.5rem !important;
+    }
+    h2{
+        font-size: 3.5rem !important;
+    }
+    h5{
+        font-size: 2.5rem !important;
+    }
+    .form-control{
+        margin-top: 20px;
+        font-size: 2.5rem !important;
+    }
+}
+/* responsive design mobil (landscape) */
+@media only screen and (min-device-height: 320px) and (max-device-height: 570px) and (orientation: landscape) {
+    p {
+        font-size: 30px;
+    }
 
+    .main-content {
+        height: 120vh;
+    }
 
-
-
-
-
-
+    .main-text {
+        padding-left: 18vw;
+        padding-right: 10vw;
+        display: flex;
+        justify-content: start;
+    }
+}
+/* Modificaciones a BS5 */
 .boton{
     background-color: rgb(150, 201, 62) !important;
     border-color: rgb(150, 201, 62) !important;
-}
-a:hover{
-    color: #0cc449 !important;
 }
 .navbar{
     --bs-navbar-padding-y: 0 !important;
@@ -109,4 +169,3 @@ a:hover{
     --bs-btn-hover-bg: #0cc449 !important;
     --bs-btn-hover-border-color: #0cc449 !important;
 }
-

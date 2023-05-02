@@ -14,6 +14,33 @@
 .cards{
     /* margin-top: 10vh; */
     margin-bottom: 2vh;
-
-
+}
+.access{
+    display: none;
+}
+.nav-text{
+    font-size: 1.5rem;
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .miDropdown{
+        display: none;
+    }
+    .access{
+        display: flex;
+    }
+    .nav-icon{
+        font-size: 100px;
+        margin-left: 30vw;
+    }
+    
+    .hamburguesa{
+        font-size: 50px;
+    }
+    .nav-text{
+        font-size: 2.5rem;
+    }
+    a{
+        font-size: 2.5rem !important;
+        margin: 0.25rem 0;
+    }
 }
