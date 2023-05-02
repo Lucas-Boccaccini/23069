@@ -139,21 +139,21 @@ u{
     }
 }
 /* responsive design mobil (landscape) */
-@media only screen and (min-device-height: 320px) and (max-device-height: 570px) and (orientation: landscape) {
-    p {
-        font-size: 30px;
-    }
-
-    .main-content {
-        height: 120vh;
-    }
-
-    .main-text {
-        padding-left: 18vw;
-        padding-right: 10vw;
-        display: flex;
-        justify-content: start;
-    }
+@media only screen and (min-device-height: 320px) 
+                   and (max-device-height: 570px) 
+                   and (orientation: landscape) {
+                    p{
+                        font-size: 30px;
+                    }
+                    .main-content{
+                        height: 120vh;
+                    }
+                    .main-text{
+                        padding-left: 18vw;
+                        padding-right: 10vw;
+                        display: flex;
+                        justify-content: start;
+                    }
 }
 /* Modificaciones a BS5 */
 .boton{
