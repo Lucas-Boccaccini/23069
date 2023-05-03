@@ -11,108 +11,177 @@
 </head>
 <body>
     <header class="p-3 mb-3 border-bottom">
-        <nav>
-            <div class="menu-principal">
-                <div class="nav-start">
-                    <a href="../index.html" 
-                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                        <i class="fa-brands fa-java java"></i>
-                        <span class="fs-4">Cac Java</span>
-                    </a>
-                </div>
-                <div class="nav-center">
-                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="../index.html" class="nav-link px-2 link-body-emphasis">Home</a></li>
-                        <li><a href="#" class="nav-link px-2 link-body-emphasis">Inventory</a></li>
-                        <li><a href="./html/Proyectos.html" class="nav-link px-2 link-body-emphasis">Proyectos</a></li>
-                        <li><a href="#" class="nav-link px-2 link-body-emphasis">Sobre Mí</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+                <button class="navbar-toggler mt-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon hamburguesa "></span>
+                </button>
+                <a href="./index.html"
+                    class="navbar-brand mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none ">
+                    <i class="fa-brands fa-java java nav-icon"></i>
+                    <span class="nav-text">Cac Java</span>
+                </a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inventory</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./html/Proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About me</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="nav-end d-flex">
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                    </form>
-                    <div class="dropdown text-end">
+                 <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                    <div class="dropdown miDropdown">
                         <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                            <span class="ms-2">Nombre de usuario</span>
                         </a>
+                         <!-- una vez iniciada sesion -->
                         <ul class="dropdown-menu text-small">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">New project</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </li>
                             <li>
                             <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
+                            <li>
+                                <a class="dropdown-item" href="#">Log out</a>
+                            </li>
+                        </ul> 
                     </div>
-                </div>
+                    <!-- sino inicio sesion -->
+                    <!-- <ul class="navbar-nav">
+                        <li class="nav-item access">
+                            <a class="nav-link" href="">Registrarse</a>
+                        </li>
+                        <li class="nav-item access">
+                            <a class="nav-link" href="">Acceder</a>
+                        </li>
+                    </ul> -->
+                    <!-- version mobil -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item access">
+                            <a class="nav-link" href="#">New project</a>
+                        </li>
+                        <li class="nav-item access">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item access">
+                            <a class="nav-link" href="#">Settings</a>
+                        </li>
+                        <li>
+                        <hr class="dropdown-divider">
+                        </li>
+                        <hr>
+                        <li class="nav-item access">
+                            <a class="nav-link" href="#">Log out</a>
+                        </li>
+                    </ul> 
+                </div> 
             </div>
         </nav>
     </header>
     <main>
         <section class="container">
-            <div class="row">
+            <div class="row cards">
                 <div class="Proyectos">
                     <h2>Proyectos</h2>
                 </div>
-                <article class="col-lg-4 cards">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">Proyecto 1</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Front End</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Click Aqui</a>
-                        </div>
-                      </div>
-                </article>
-                <article class="col-lg-4 cards">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">Proyecto 2</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Front End</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Click Aqui</a>
-                        </div>
-                      </div>
-                </article>
-                <article class="col-lg-4 cards">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">Proyecto 3</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Front End</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Click Aqui</a>
+                <article class="col-lg-4 px-2 py-2 ">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Proyecto 1</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Front End</h6>
+                            </div>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="card-link">Click Aqui</a>
                         </div>
                     </div>
                 </article>
-                <article class="col-lg-4 cards">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">Proyecto Integrador</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Front End</h6>
-                          <p class="card-text">Proyecto integrador front codo a codo #23069.</p>
-                          <a href="../TP_Integrador_front/Proyecto_front.html" class="card-link">Click Aqui</a>
-                        </div>
-                      </div>
-                </article>
-                <article class="col-lg-4 cards">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 4</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <article class="col-lg-4 px-2 py-2 ">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Proyecto 2</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Front End</h6>
+                            </div>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
                             <a href="#" class="card-link">Click Aqui</a>
                         </div>
-                      </div>
+                    </div>
                 </article>
-                <article class="col-lg-4 cards">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 5</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <article class="col-lg-4 px-2 py-2 ">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Proyecto 3</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Front End</h6>
+                            </div>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="card-link">Click Aqui</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-4 px-2 py-2 ">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Proyecto Integrador</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Front End</h6>
+                            </div>
+                            <p class="card-text">
+                                Proyecto integrador front codo a codo #23069.
+                            </p>
+                            <a href="../TP_Integrador_front/Proyecto_front.html" class="card-link">Click Aqui</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-4 px-2 py-2 ">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Proyecto 4</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            </div>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="card-link">Click Aqui</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-lg-4 px-2 py-2 ">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Proyecto 5</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            </div>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
                             <a href="#" class="card-link">Click Aqui</a>
                         </div>
                     </div>

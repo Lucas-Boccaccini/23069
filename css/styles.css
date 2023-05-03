@@ -11,15 +11,15 @@
     color:black;
     margin:0 15px 0 5px;
 }
-.cards{
-    /* margin-top: 10vh; */
-    margin-bottom: 2vh;
-}
+
 .access{
     display: none;
 }
 .nav-text{
     font-size: 1.5rem;
+}
+.card{
+    height: 200px !important;
 }
 @media (min-width: 576px) and (max-width: 992px) {
     .miDropdown{
@@ -39,8 +39,12 @@
     .nav-text{
         font-size: 2.5rem;
     }
-    a{
+    .nav-link{
         font-size: 2.5rem !important;
         margin: 0.25rem 0;
     }
+    .cards{
+        padding: 0 20vw !important;
+    }
+
 }
