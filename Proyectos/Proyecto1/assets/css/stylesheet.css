@@ -1,0 +1,128 @@
+body{
+    margin: 0 25px;
+}
+.contenedor{
+    background-color: aquamarine;
+    border: 5px black solid;
+}
+.contenedor-v2 a{
+    display: block;
+}
+.contenedor-v2{
+    border: 1px solid green;
+    margin: 25px 0px;
+}
+#indice{
+    color:green;
+}
+/* 
+selectores por atributo
+=: EXACTAMENTE IGUAL
+^=: comience con
+*=: contenga tal cosa
+$=: termine con tal cosa
+*/
+
+/* alt 94 ^
+li[id^=li]{ modifica todos los li que tengan un id que empieza en "li"
+background-color: blue;
+color: white;
+}
+*/
+/* 
+li[id*=li]{ modifica todos los li que tengan un id que tengan "li"
+background-color: blue;
+color: white;
+}
+*/
+/* 
+li[id$=li]{ modifica todos los li que tengan un id que termine en "li"
+background-color: blue;
+color: white;
+}
+*/
+
+.container{
+    border: 3px dashed red;
+    text-align: center;
+}
+.container{
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+.nav > li > a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+}
+
+ul li{
+    list-style: none;
+    font-weight: bold;
+}
+
+
+li:hover{
+    text-decoration: underline;
+}
+
+/* especifidad.html */
+
+.parrafo{
+    color: blueviolet;
+}
+#parrafoId{
+    color: aqua;
+}
+
+/* selectores avanzados */
+/* selector hijo >  */
+
+.listado > li > a{
+    color: darkblue;
+}
+
+/* selector hermano adyacente */
+
+h1 + p{
+    font-size: 25px;
+    color: black;
+}
+
+/* hermano general */
+/*todos los p hermanos de h1 */
+
+/* h1 ~ p > h1+p MAYOR ESPECIFIDAD*/
+
+h1 ~ p{
+    color: blueviolet;
+    font-size: 18px;
+}
+
+/* pseudo clases */
+/* :first-child toma el primer elemento */
+/* :last-child toma el ultimo elemento */
+
+#pseudo-clases > p:first-child{
+color: blue;
+font-size: 25px;
+}
+
+#pseudo-clases > p:last-child{
+color: red;
+font-size: 30px;
+text-transform: uppercase;
+}
+
+
+
+
+
+
