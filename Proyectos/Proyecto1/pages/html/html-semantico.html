@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>Clase 3 - vamos a ver html semantico y formularios</h1>
+        <nav class="container">
+            <ul class="nav">
+                <li>
+                    <a href="../../index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="../ejercicios/pizza.html">PIZZA</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Mundial Qatar</h2>
+        <section>
+            <h3>grupos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, atque!</p>
+        </section>
+        <section>
+            <h3>fechas</h3>
+            <ol>
+                <li>fecha 1</li>
+                <li>fecha 2</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Equipos</h3>
+            <table style="border: 1px solid black;" width="100%">
+                <thead>
+                    <th>
+                        Equipo
+                    </th>
+                    <th>
+                        DT
+                    </th>
+                    <th>
+                        Grupo
+                    </th>
+                </thead>
+                <tr>
+                    <td style="text-align:center;">Argentina</td>
+                    <td style="text-align:center;">Scaloni</td>
+                    <td style="text-align:center;">D</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">Brasil</td>
+                    <td style="text-align:center;">x</td>
+                    <td style="text-align:center;">F</td>
+                </tr>
+                <tfoot>
+                    <tr style="text-align:center;">
+                        <td colspan="3">
+                            codo a codo 2023 - #23069 - fullstack Java
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <aside>
+        <div>
+            <h5>Viajes a madrid</h5>
+            <!-- url absoluta -->
+            <img width="50%" src="https://a.cdn-hotels.com/gdcs/production133/d1207/7ad2d7f0-68ce-11e8-8a0f-0242ac11000c.jpg" alt="madrid">
+            <p>las mejores vacaciones de tu vida</p>
+        </div>
+        <div>
+            <h5>Buenos aires</h5>
+             <!-- url relatiba -->
+             <!-- ./ imagen al mismo nivel del archivo "html-semantico.html" -->
+             <img width="50%" src="./BSAS.jpg" alt="bsas">
+             <p>las mejores vacaciones de tu vida</p>
+        </div>
+        <div>
+            <h5>chubut</h5>
+             <!-- url relatiba -->
+             <!-- ../ volver una carpeta atras -->
+             <img width="50%" src="../../chubut.jpg" alt="chubut">
+             <p>las mejores vacaciones de tu vida</p>
+        </div>
+        <div>
+            <h5>cooming soon</h5>
+             <!-- url relatiba -->
+             <!-- ../ volver una carpeta atras -->
+             <img width="50%" src="../../assets/img/proximamente.jpg" alt="">
+             <p>el mejor cooming soon de tu vida</p>
+        </div>
+    </aside>
+</body>
+</html>

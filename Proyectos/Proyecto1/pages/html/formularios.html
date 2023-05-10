@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../assets/css/stylesheet.css">
+    <title>formularios</title>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul class="nav">
+                <li>
+                    <a href="./index.html">home</a>
+                </li>
+                <li>
+                    <a href="./pages/ejercicios/pizza.html">pizzas</a>
+                </li>
+                <li>
+                    <a href="./pages/html/html-semantico.html">html</a>
+                </li>
+                <li>
+                    <a href="./pages/html/formularios.html">formularios</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <fieldset>
+                <legend>
+                    <h1>
+                        Formularios
+                    </h1>
+                </legend>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" id="nombre" maxlength="5" required>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido: </label>
+                        <input type="text" name="apellido" id="apellido" required>
+                    </div>
+                    <div>
+                        <label for="nac">Nacionaliadad: </label>
+                        <select name="nac" id="nac">
+                            <option value="AR">Argentina</option>
+                            <option value="BR">Brasil</option>
+                            <option value="CL">Chile</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="ingles">Habla ingles?</label>
+
+                        <input type="radio" name="ingles" id="ingles1" value="si">
+                        <label for="ingles1">SI</label>
+                        <input type="radio" name="ingles" id="ingles2" value="no">
+                        <label for="ingles2">NO</label>
+                    </div>
+                    <div>
+                        <label for="">Intereses</label>
+                        <div>
+                            <input type="checkbox" name="intereses" id="intereses1" value="futbol">Futbol
+                            <input type="checkbox" name="intereses" id="intereses2" value="muscia">Muscia
+                            <input type="checkbox" name="intereses" id="intereses3" value="programacion">Programacion
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Avatar:</label>
+                        <input type="file" name="avatar" id="">
+                    </div>
+                        <div>
+                            <label for="">Fecha Nac:</label>
+                            <input type="date"> 
+                        </div>
+                    <div>
+                        <label for="comision">Comision: </label>
+                        <input type="number" name="comision" id="comision" maxlength="10" required>
+                    </div>
+                    <div>
+                        <button type="submit">
+                            enviar
+                        </button>
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>Otros tags</legend>
+                <form action="" method="">
+                    <input type="hidden" 
+                        name="" 
+                        id="clave" 
+                        value="1234"
+                        >
+                    <div>
+                        <label for="search"></label>
+                        <input type="search" 
+                            name="search" 
+                            id="search">
+                            <button>
+                                Buscar
+                            </button>
+                    </div>  
+                </form>
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        <p>contacto</p>
+        <form action="">
+            <label for="comentario">comentarios: </label>
+            <div>
+                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email">
+            </div>
+            <div>
+                <button type="submit">
+                    enviar
+                </button>
+            </div>
+        </form>
+        <p>Mapa del sitio</p>
+        <dl>
+            <dt>Home</dt>
+            <dt>Pizza</dt>
+            <dt>Formularios</dt>
+            <dt>Html semantico</dt>
+        </dl>
+    </footer>
+</body>
+</html>

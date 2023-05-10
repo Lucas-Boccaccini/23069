@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- link relativo -->
+    <link rel="stylesheet" href="../../assets/css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- css interno -->
+    <style> 
+    /* !important > inline > id > class > tag > selector universal */
+        
+        /* selector universal (*) */
+        *{
+            /* definir variables */
+            /* font-size: 13px; */
+            font-family: 'Ubuntu', sans-serif;
+        }
+        /* es es codigo css */
+        /* selector de tipo */
+        /* 1em = 16px */
+        h1{
+            color: orange;
+            font-weight: 300;
+        }
+        h2{
+             font-size: 3em;
+             color: blue;
+        }
+        #parrafoId{
+            font-size: 20px;
+            font-weight: bold; /*<b>*/
+            font-style: italic; /*<i>*/
+            
+        }
+        .parrafoClase{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- selector de tipo: uso el nombre del tag
+        h1{
+            atributo: valor;
+        }
+    -->
+    <!-- css inline -->
+    <div class="container">
+        <p>soy un div</p>
+    </div>
+    <h1 style="color: red">Clase 1 - CSS</h1>
+    <h2>forma de incluir css</h2>
+    <p id="parrafoId">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure alias similique soluta, voluptates nobis quis quae eos. Blanditiis adipisci alias consequuntur voluptatum placeat, veniam nostrum cumque, quas corporis, sunt eveniet.</p>
+    <p class="parrafoClase">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae labore, qui voluptas esse modi quae culpa corporis earum rem quibusdam!</p>
+    <h3 class="parrafoClase">h3 con el mismo estilo que el p</h3>
+</body>
+</html>
