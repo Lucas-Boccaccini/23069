@@ -11,16 +11,15 @@
     color:black;
     margin:0 15px 0 5px;
 }
-
 .access{
     display: none;
 }
 .nav-text{
     font-size: 1.5rem;
 }
-.card{
+/* .card{
     height: 200px !important;
-}
+} */
 @media (min-width: 576px) and (max-width: 992px) {
     .miDropdown{
         display: none;
@@ -44,7 +43,19 @@
         margin: 0.25rem 0;
     }
     .cards{
-        padding: 0 20vw !important;
+        padding: 0 10vw !important;
+    }
+    .card-title{
+        font-size: 2.5rem !important;
+    }
+    .card-subtitle{
+        font-size: 2.25rem !important;
+    }
+    .card-body{
+        font-size: 40px;
+    }
+    .Proyectos h2{
+        font-size: 3.5rem ;
     }
 
 }
