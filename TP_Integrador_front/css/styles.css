@@ -87,6 +87,29 @@ u{
         filter: brightness(0.7);
 }
 
+
+/* comprarTickets.html */
+
+.estudiante{
+    border-style: solid;
+    border-color: rgb(0, 123, 255);
+    width: 200px;
+}
+.trainee{
+    border-style: solid;
+    border-color: rgb(23, 162, 184);
+    width: 200px;
+    margin: 0 10px;
+}
+.junior{
+    border-style: solid;
+    border-color: rgb(255, 193, 7);
+    width: 200px;
+}
+
+/* comprarTickets.html */
+
+
 /* responsive design mobil */
 @media (min-width: 578px) and (max-width: 992px) {
     .cac{

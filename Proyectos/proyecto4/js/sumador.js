@@ -16,16 +16,20 @@ function sumar() {
     const v2 = toNumber(document.getElementById('valor2').value);
 
     const suma = v1 + v2;
-    const apuntadorAlResultado = document.getElementById('resultado').innerHTML = suma;
+    const apuntadorAlResultado = document.getElementById('resultado');
+    apuntadorAlResultado.innerHTML = suma
     //en los div no existe value (como el input) existe innerHTML
 }
-
-const apuntadorAlBotonSuma2 = document.getElementById("btnSumador");
-apuntadorAlBotonSuma2.addEventListener('click', sumar())
-
+// function sumarV2(){ 
+//      LO MISMO QUE SUMAR()
+//     const suma = toNumber(document.getElementById("valor1").value) + toNumber(document.getElementById("valor2").value)
+//     document.getElementById("resultado").innerHTML = suma
+// }
 function toNumber (valor) {
     //lógica de la función
     const valorNumerico = Number(valor);
     
     return valorNumerico;
- }
+}
+const boton = document.getElementById('btnSumador');
+boton.addEventListener('click', sumar);
