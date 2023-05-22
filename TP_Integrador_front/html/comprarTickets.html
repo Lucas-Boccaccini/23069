@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="img/html.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/html.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -40,71 +41,75 @@
             </div>
           </nav>
     </header>
-    <main class="container ticket">
-        <div class="d-flex justify-content-center text-center mt-3">
-            <div class="estudiante" style="border-color: 1px solid aqua;">
-                <h4>Estudiante</h2>
-                <p>Tienen un descuento</p>
-                <h6>80%</h6>
-                <p class="text-muted">* Presentar documentacion</p>
-            </div>
-            <div class="trainee">
-                <h4>Traninee</h2>
-                <p>Tienen un descuento</p>
-                <h6>50%</h6>
-                <p class="text-muted">* Presentar documentacion</p>
-            </div>
-            <div class="junior">
-                <h4>Junior</h2>
-                <p>Tienen un descuento</p>
-                <h6>15%</h6>
-                <p class="text-muted">* Presentar documentacion</p>
+    <main class="container w-75">
+        <div class="container-fluid">
+            <section class="row ticket text-center my-3">
+                <article class="col-lg-4 estudiante dto">
+                    <h4>Estudiante</h2>
+                    <p>Tienen un descuento</p>
+                    <h6>80%</h6>
+                    <p class="text-muted">* Presentar documentacion</p>
+                </article>
+                <article class="col-lg-4 trainee dto">
+                    <h4>Traninee</h2>
+                    <p>Tienen un descuento</p>
+                    <h6>50%</h6>
+                    <p class="text-muted">* Presentar documentacion</p>
+                </article>
+                <article class="col-lg-4 junior dto">
+                    <h4>Junior</h2>
+                    <p>Tienen un descuento</p>
+                    <h6>15%</h6>
+                    <p class="text-muted">* Presentar documentacion</p>
+                </article>
+            </section>
+            <div class="container">
+                <div class="text-center">
+                    <h6>venta</h6>
+                    <h2>VALOR DE TICKET $200</h2>
+                </div>
+                <form action="#">
+                    <div class="row mb-3">
+                        <div class="col-lg-6">
+                            <input type="text" name="" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" name="" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                        </div>
+                    </div>
+                    <div class="mb-3 col-auto">
+                        <input type="email" name="" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label for="cant" class="form-label text-muted ">Cantidad</label>
+                            <input type="text" name="" id="cant" class="form-control" id="exampleFormControlInput1" placeholder="Cantidad">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="categoria" class="form-label text-muted">Categoria</label>
+                            <select name="categoria" id="categoria" class="form-select text-muted">
+                                <!-- <option value="-1" disabled selected>Seleccione una opcion</option> -->
+                                <option value="1">Estudiante</option>
+                                <option value="2">Trainee</option>
+                                <option value="3">Junior</option>
+                            </select>  
+                        </div>
+                    </div>
+                    <div class="alert alert-primary my-4" id="pagar" role="alert">
+                        Total a pagar: $
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <button class="w-100 btn btn-lg btn-success boton mt-2" type="reset">Borrar</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <button class="w-100 btn btn-lg btn-success boton mt-2" type="submit" onclick="calcularPrecio()">Resumen</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="container w-75">
-            <div class="text-center">
-                <h6>venta</h6>
-                <h2>VALOR DE TICKET $200</h2>
-            </div>
-            <form action="#">
-                <div class="row">
-                    <div class="mb-3 col-lg-6">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
-                    </div>
-                    <div class="mb-3 col-lg-6">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <label for="" class="form-label">Cantidad</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Cantidad">
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="" class="form-label">Categoria</label>
-                        <select name="" id="" class="form-select">
-                            <option value="1">Estudiante</option>
-                            <option value="2">Trainee</option>
-                            <option value="3">Junior</option>
-                        </select>                    
-                    </div>
-                </div>
-                <div class="alert alert-primary my-4" role="alert">
-                    Total a pagar: $
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <button class="w-100 btn btn-lg btn-success boton mt-2" type="reset">borrar</button>
-                    </div>
-                    <div class="col-lg-6">
-                        <button class="w-100 btn btn-lg btn-success boton mt-2" type="submit">resumen</button>
-                    </div>
-                </div>
-            </form>
-        </div>
+        
     </main>
     <footer class="py-3 px-2 mt-4 footer-content">
         <ul class="nav row row-cols-2 text-center">
@@ -131,6 +136,7 @@
                 </li>  
         </ul>
     </footer>
+    <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -89,22 +89,26 @@ u{
 
 
 /* comprarTickets.html */
+.dto{
+    margin: 0 0.5rem;
+    width: 20vw !important;
+}
 
+.ticket{
+    justify-content: center;
+}
 .estudiante{
     border-style: solid;
     border-color: rgb(0, 123, 255);
-    width: 200px;
 }
 .trainee{
     border-style: solid;
     border-color: rgb(23, 162, 184);
-    width: 200px;
-    margin: 0 10px;
+    /* margin: 0 10px; */
 }
 .junior{
     border-style: solid;
     border-color: rgb(255, 193, 7);
-    width: 200px;
 }
 
 /* comprarTickets.html */
@@ -160,6 +164,36 @@ u{
         margin-top: 20px;
         font-size: 2.5rem !important;
     }
+    /* comprarTickets.html */
+    .dto{
+        margin: 1rem 0;
+        width: 60vw !important;
+    }
+    .dto p{
+        font-size: 40px;
+    }
+    .dto h4{
+        font-size: 3.5rem !important
+    }
+    .dto h6{
+        font-size: 2.5rem !important
+    }
+    .ticket{
+        flex-direction: column;
+        align-content: center;
+    }
+    h6{
+        font-size: 2.5rem !important;
+    }
+    .form-label{
+        display: none;
+    }
+    .alert{
+        font-size: 2rem !important;
+    }
+    /* comprarTickets.html */
+
+
 }
 /* responsive design mobil (landscape) */
 @media only screen and (min-device-height: 320px) 

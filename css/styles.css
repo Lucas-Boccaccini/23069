@@ -17,9 +17,13 @@
 .nav-text{
     font-size: 1.5rem;
 }
-/* .card{
+.card{
     height: 200px !important;
-} */
+}
+.card:hover{
+    outline: 3px solid rgba(58, 58, 58, .6);
+}
+
 @media (min-width: 576px) and (max-width: 992px) {
     .miDropdown{
         display: none;
