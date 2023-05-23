@@ -164,6 +164,15 @@ u{
         margin-top: 20px;
         font-size: 2.5rem !important;
     }
+  
+    .form-select{
+        font-size: 2.5rem !important;
+        margin-top: 20px;
+
+    }
+    option{
+        font-size: 1rem !important;
+    }
     /* comprarTickets.html */
     .dto{
         margin: 1rem 0;
@@ -191,6 +200,7 @@ u{
     .alert{
         font-size: 2rem !important;
     }
+   
     /* comprarTickets.html */
 
 
