@@ -23,7 +23,25 @@
 .card:hover{
     outline: 3px solid rgba(58, 58, 58, .6);
 }
-
+.html{
+    background-color: orange;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-weight: bold;
+}
+.css{
+    background-color: rgb(22, 111, 184);
+    border-radius: 5px;
+    padding: 0 5px;
+    font-weight: bold;
+    color: white;
+}
+.js{
+    background-color: rgb(254, 193, 7);
+    border-radius: 5px;
+    padding: 0 5px;
+    font-weight: bold;
+}
 @media (min-width: 576px) and (max-width: 992px) {
     .miDropdown{
         display: none;
