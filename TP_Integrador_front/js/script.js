@@ -31,7 +31,7 @@ function valido(){
     const apellido = document.getElementById("apellido").value;
     const email = document.getElementById("email").value;
     const cantidad = document.getElementById("cant").value;
-    
+    let valido = false;
     if(nombre == ""){
         document.getElementById("alerta").innerHTML =
         "<div class='alert alert-warning alert-dismissible fade show' role='alert'>"+
@@ -62,8 +62,9 @@ function valido(){
             "<strong>Exito!</strong> Todos los campos han sido completados."+
             "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>"+
         "</div>";
+        valido = true;
     }
-    // return console.log(`Nombre: ${nombre} Apellido: ${apellido} Email: ${email}`);
+    return valido;
 }
 const calcularPrecio = () => {
     if(valido()){
