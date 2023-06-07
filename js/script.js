@@ -6,7 +6,7 @@ const animacion = (isActive) =>{
         },500);
     }
 }
-document.querySelectorAll('.proyect').forEach(function (element) {
+document.querySelectorAll('.card').forEach(function (element) {
     element.addEventListener('click', function () {
         if(element.id == "P1"){
             animacion(element);
