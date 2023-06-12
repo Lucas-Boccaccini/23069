@@ -74,6 +74,7 @@
     padding: 0 5px;
     font-weight: bold;
 }
+
 @media (min-width: 576px) and (max-width: 992px) {
     .miDropdown{
         display: none;
@@ -85,7 +86,6 @@
         font-size: 100px;
         margin-left: 30vw;
     }
-    
     .hamburguesa{
         font-size: 50px;
     }
@@ -111,5 +111,13 @@
     .Proyectos h2{
         font-size: 3.5rem ;
     }
-
+    .card{
+        height: 20vh !important ;
+    }
+    .card .text{
+        font-size: 30px;
+    }
+    i{
+        font-size: 50px !important;
+    }
 }
