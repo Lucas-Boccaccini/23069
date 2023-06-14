@@ -25,6 +25,9 @@ document.querySelectorAll('.card').forEach(function (element) {
             setTimeout(()=> location.href="../Proyectos/proyecto4/javascript.html",500);
         }else if(element.id == "P6"){
             animacion(element);
+            setTimeout(()=> location.href="../Proyectos/proyecto4/html/metodos-arrays.html",500);
+        }else if(element.id == "P7"){
+            animacion(element);
             setTimeout(()=> location.href="#",500);
         }
     });
