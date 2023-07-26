@@ -4,6 +4,7 @@
 }
 .menu-container{
     background-color: #495057;
+    position:fixed;
 }
 .nav-links li{
     margin: 5px;
